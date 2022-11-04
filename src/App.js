@@ -121,6 +121,7 @@ const App = () => {
     }
   }
 
+
   const loginForm = () => (
     <Login handleLogin={handleLogin}/>
   )
@@ -131,7 +132,7 @@ const App = () => {
         <h2>blogs</h2>
         <p>
           {user.name} logged in
-          <button type="button" onClick={handleLogout}>logout</button>
+          <button id='logout-button' type="button" onClick={handleLogout}>logout</button>
         </p>
         <Togglable buttonLabel='new blog' ref={createFormRef}>
           <CreateForm createBlog={handleCreate}/>
